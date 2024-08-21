@@ -1,8 +1,9 @@
 name: Python Workflow
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "30 11 * * *"    # Runs at 11:30 UTC everyday
+    - cron: "30 11 * * *"  # Runs at 11:30 UTC everyday
 
 jobs:
   build:
